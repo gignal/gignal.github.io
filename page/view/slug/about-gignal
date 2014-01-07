@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Welcome to Gignal</title>
+<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><title>Gignal Official Homepage | Page</title><script type="text/javascript" src="/common/scripts/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.lightbox.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="/scripts/jquery.example.min.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="/scripts/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script><link href="/common/styles/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/common/styles/jquery.lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/colorbox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/main.css" media="screen" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body id="page">
+<div class="topbar">
+<div class="container_12 group">
+<div class="toplogo grid_4"><a href="/"><img src="/images/logo.png" alt="Gignal"></a></div>
+<div class="grid_7 push_1">
+<ul>
+	<li class="grid_1"><a href="/page/view/slug/about-gignal">About <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+	<ul class="subnav">
+		<li><a href="/page/view/slug/about-gignal">About Gignal</a></li>
+		<li><a href="/page/view/slug/our-team">Our team</a></li>
+		<li><a href="http://blog.gignal.com/">Blog</a></li>
+	</ul>
+	</li>
+	<li class="grid_1"><a href="/pricing">Pricing</a></li>
+
+
+		<li class="grid_2 push_2 logged" id="formSubnav">
+		<a href="#">Sign In <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+		
+		<form method="post" action="/auth/login" id="loginForm">
+			<ul class="subnav loginnav contain_float">
+				<li><label for="auth_username">Username</label> <input type="text" name="auth_username" id="auth_username" class="input"></li>
+				<li><label for="auth_password">Password</label> <input type="password" name="auth_password" id="auth_password" class="input"></li>
+				<li class="align_right">
+					<input type="submit" value="Sign In" class="btn_form"> 
+					<label><a class="forgot-pwd" href="#">Forgot your password ?</a></label> 
+					<label>Don't have an account yet ? <a class="sign-up" href="/user/create"><img src="/images/sign-up-for-gignal.png" /></a></label>
+				</li>
+			</ul>
+		</form>
+		
+		<form class="hidden" method="post" action="/auth/reset-password" id="resetPassForm">
+			<ul class="subnav loginnav contain_float">
+				<li><label>Type your e-mail and we'll send the new password to this e-mail.</label></li>
+				<li><label for="auth_email">Email</label> <input type="text" name="auth_email" id="auth_email" class="input"></li>
+				<li class="align_right"><input type="submit" value="Reset" class="btn_form"> <a class="back-login" href="#"><< back to sign in</a></li>
+			</ul>
+		</form>
+	</li>
+	</ul>
+</div>
+</div>
+</div>
+
+	
+	<div class="banner clear"><img class="bigimage" src="/uploads/photos/about-us-Gignal.jpg"></div>
+<div class="container_12">
+		<div class="content">
+				<div class="post_title grid_12"><span class="author grid_3"></span>
+						<h1 class="big">About Gignal</h1>
+				</div>
+				<div class="grid_3">
+						<div class="sidebox">
+								<p>Do you have any questions about Gignal? Don't hesitate to  <a href="mailto:team@gignal.com">contact us.</a></p>
+						</div>
+						<div class="sidebox"></div>
+				</div>
+				<div class="grid_9">
+						<p><p>
+	<strong>Gignal - A Social Media Billboard.&nbsp; </strong>d&aring;rlig</p>
+<p>
+	Gignal amplifies your brand and event by presenting all the social media buzz produced by your audience, users and customers.&nbsp;</p>
+<p>
+	When people share an experience they do it on their preferred social network. Gignal collects and presents all the content that users, fans and audiences share across social networks, from messages and pictures shared on Facebook, Twitter, Foursquare and Flickr. We collect data based on tags (keyword) and geotags (geographical location through GPS).</p>
+<p>
+	We amplify social media buzz and drive traffic back to your website - to have and to hold.</p>
+<p>
+	<strong>Present Your Buzz On:</strong><br />
+	1. On your website, on the front page, under a &ldquo;live&rdquo; menu, by using our widget that you can customize.<br />
+	2. On physcial screens at the office, in the foyer and on billboards at the venue.&nbsp;<br />
+	3. On Gignal&rsquo;s site - so we can spread the word too.</p>
+<p>
+	<strong>The&nbsp;<strong>Techie Explanation</strong></strong><br />
+	We gather data based on tags, and the geo-tag from a venue. We access data through the most used social networks API, allowing us to give you a horizontal view of all the content people are producing across social networks.&nbsp;</p>
+<p>
+	<strong>The Value</strong><br />
+	- Claim, collect and present the social media buzz surrounding your brand.<br />
+	- Drive the traffic to your, and let people interact there.&nbsp;<br />
+	- Amplify and share the user experience.<br />
+	- Engage your global audience and fan communities - make the content more viral.<br />
+	- Save user generated branded content across social media (otherwise lost).</p>
+<p>
+	<strong>Gignalism</strong></p>
+<p>
+	&ldquo;We are no longer people of the book, we are now people of the screen&rdquo; - Kevin Kelly Senior Maverick at Wired said, and that is exactly the trend Gignal supports. We look at screens all the time, on our mobile phones, on our laptops, TV&rsquo;s and on public screens. We do it because we want to be updated and connected. We trust people that we know and share an interest with - and when we share a collective experience at events.&nbsp;</p>
+<p>
+	We have seen the effect of the stream from Football games to the Arab Spring, people at the physical location engage each other to spread&nbsp;viral&nbsp;messages, and people around the world follow and participate online.&nbsp;</p>
+<p>
+	We want screens at venues to bring value to their audience. We want to amplify experiences at events. We want to connect people at a physical location with people watching online. Because&nbsp;<a href="http://blog.gignal.com/post/11690308241/there-is-no-past-future-there-is-just-a-stream" title="Link: http://blog.gignal.com/post/11690308241/there-is-no-past-future-there-is-just-a-stream">there is no past and there is no future</a>&nbsp;- there is just a real-time stream.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Our Story</strong><br />
+	It all started with&nbsp;<a href="http://nordicmeetup.com/">NordicMeetup</a>&nbsp;in 2010, an event our CEO Natasha Friis Saxberg organize together with Petra Johansson, to connect the Nordic Startup Scene. We were having our first event in Copenhagen, but wanted to share who were actually participating, the online conversations and pictures with the rest of the Nordic region. We hacked Gignal over a weekend and made it ready to present NordicMeetup Copenhagen online.&nbsp;</p>
+<p>
+	A few months later the Danish television station TV2 were presenting the World Cup in soccer and needed a social element that could entertain and engage the audience. We offered them to use Gignal and we decided to focus on building a stream that could amplify events and distribute social network buzz. That summer more than 300.000 audiences saw Gignal on physical screens at several events.&nbsp;</p>
+<p>
+	Our future vision for Gignal is to build a stream that will engage and entertain audiences while spreading events from a physical location - to everyone online in the world that wants to participate through the conversations created by the people on the first row.</p></p>
+				</div>
+		</div>
+</div>
+
+<div class="footerbottom">
+<div class="container_12">
+<div class="grid_5 feedbackholder"><textarea class="feedback" title="Can we help you?" id="feedback_txt"></textarea> <input type="button" value="Send" class="btn_send"
+	id="feedback_btn"></div>
+<div class="grid_2">
+<ul class="subnav">
+	<li><a href="/page/view/slug/about-gignal">About Gignal</a></li>
+	<li><a href="/page/view/slug/our-team">Our team</a></li>
+	<li><a href="http://blog.gignal.com/">Blog</a></li>
+	<li><a href="/page/view/slug/legal">Legal</a></li>
+</ul>
+</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<input type="hidden" name="baseUrl" id="baseUrl" value="" />
+<input type="hidden" name="originalController" id="originalController" value="page" />
+<input type="hidden" name="msg" value="" />
+<input type="hidden" name="domain" id="domain" value="gignal.com" />
+<input type="hidden" name="group" id="group" value="" />
+
+</body>
+
+</html>
+

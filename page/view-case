@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Welcome to Gignal</title>
+<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><title>Gignal Official Homepage | Page</title><script type="text/javascript" src="/common/scripts/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.lightbox.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="/scripts/jquery.example.min.js"></script>
+<script type="text/javascript" src="/common/scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="/scripts/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script><link href="/common/styles/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/common/styles/jquery.lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/colorbox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/main.css" media="screen" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body id="page">
+<div class="topbar">
+<div class="container_12 group">
+<div class="toplogo grid_4"><a href="/"><img src="/images/logo.png" alt="Gignal"></a></div>
+<div class="grid_7 push_1">
+<ul>
+	<li class="grid_1"><a href="/page/view/slug/about-gignal">About <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+	<ul class="subnav">
+		<li><a href="/page/view/slug/about-gignal">About Gignal</a></li>
+		<li><a href="/page/view/slug/our-team">Our team</a></li>
+		<li><a href="http://blog.gignal.com/">Blog</a></li>
+	</ul>
+	</li>
+	<li class="grid_1"><a href="/pricing">Pricing</a></li>
+
+
+		<li class="grid_2 push_2 logged" id="formSubnav">
+		<a href="#">Sign In <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+		
+		<form method="post" action="/auth/login" id="loginForm">
+			<ul class="subnav loginnav contain_float">
+				<li><label for="auth_username">Username</label> <input type="text" name="auth_username" id="auth_username" class="input"></li>
+				<li><label for="auth_password">Password</label> <input type="password" name="auth_password" id="auth_password" class="input"></li>
+				<li class="align_right">
+					<input type="submit" value="Sign In" class="btn_form"> 
+					<label><a class="forgot-pwd" href="#">Forgot your password ?</a></label> 
+					<label>Don't have an account yet ? <a class="sign-up" href="/user/create"><img src="/images/sign-up-for-gignal.png" /></a></label>
+				</li>
+			</ul>
+		</form>
+		
+		<form class="hidden" method="post" action="/auth/reset-password" id="resetPassForm">
+			<ul class="subnav loginnav contain_float">
+				<li><label>Type your e-mail and we'll send the new password to this e-mail.</label></li>
+				<li><label for="auth_email">Email</label> <input type="text" name="auth_email" id="auth_email" class="input"></li>
+				<li class="align_right"><input type="submit" value="Reset" class="btn_form"> <a class="back-login" href="#"><< back to sign in</a></li>
+			</ul>
+		</form>
+	</li>
+	</ul>
+</div>
+</div>
+</div>
+
+	
+	<div class="container_12">
+		<div class="content">
+				<div class="grid_3 clear">
+						<div class="sidebox">
+								<p>Do you have any questions about Gignal? Don't hesitate to  <a href="mailto:team@gignal.com">contact us.</a></p>
+						</div>
+				</div>
+				<div class="grid_9">
+												<div id="conferences" class="blogpost contain_float">
+								<div class="grid_3 alpha"><img src="/uploads/photos/conference.jpg" alt="blog post"></div>
+								<div class="grid_6 omega"><span class="author"></span>
+										<h2 class="big">Conferences</h2>
+										<p><p>
+	For conferences networking and knowledge is central. With Gignal conferences attendees can follow other peoples thoughts at the conference, and people outside can get insight and summaries from the speaks. People can see who else is attending f...</p>
+										<a href="view/slug/conferences" class="more">read more..</a>
+								</div>
+						</div>
+													<div id="festivals-and-music" class="blogpost contain_float">
+								<div class="grid_3 alpha"><img src="/uploads/photos/case_music.JPG" alt="blog post"></div>
+								<div class="grid_6 omega"><span class="author"></span>
+										<h2 class="big">Festivals and Music</h2>
+										<p><p>
+	When your audience are at your festival or concert, they share a collective experience. They do not know each other, which only makes their relation relevant as long as your event takes place. With Gignal audience in- and outside your festival ...</p>
+										<a href="view/slug/festivals-and-music" class="more">read more..</a>
+								</div>
+						</div>
+													<div id="sports" class="blogpost contain_float">
+								<div class="grid_3 alpha"><img src="/uploads/photos/case sport_billboard.png" alt="blog post"></div>
+								<div class="grid_6 omega"><span class="author"></span>
+										<h2 class="big">Sports</h2>
+										<p><p>
+	When audiences attend or watch a sports game, they want to see what other people are experiencing. In that moment where your sport event is taking place, strangers wants to connect to share this moment. With Gignal on your website and billboard...</p>
+										<a href="view/slug/sports" class="more">read more..</a>
+								</div>
+						</div>
+													<div id="brands-and-companies" class="blogpost contain_float">
+								<div class="grid_3 alpha"><img src="/uploads/photos/case_brand.png" alt="blog post"></div>
+								<div class="grid_6 omega"><span class="author"></span>
+										<h2 class="big">Brands and companies</h2>
+										<p><p>
+	Show what people are saying about your brand, products or topics surrounding your business. Own and present your branded buzz, and drive traffic to your website. With Gignal your users will go to your website to follow your community conversati...</p>
+										<a href="view/slug/brands-and-companies" class="more">read more..</a>
+								</div>
+						</div>
+													<div id="personal-and-small-business" class="blogpost contain_float">
+								<div class="grid_3 alpha"><img src="/uploads/photos/personal.png" alt="blog post"></div>
+								<div class="grid_6 omega"><span class="author"></span>
+										<h2 class="big">Personal and small business</h2>
+										<p><p>
+	For individuals and small companies that sees a value in presenting all their buzz across social networks. Simply add our widget code on your website, and share your social network messages and pictures from Twitter, Facebook and Flickr.&nbsp;<...</p>
+										<a href="view/slug/personal-and-small-business" class="more">read more..</a>
+								</div>
+						</div>
+											</div>
+		</div>
+</div>
+
+<div class="footerbottom">
+<div class="container_12">
+<div class="grid_5 feedbackholder"><textarea class="feedback" title="Can we help you?" id="feedback_txt"></textarea> <input type="button" value="Send" class="btn_send"
+	id="feedback_btn"></div>
+<div class="grid_2">
+<ul class="subnav">
+	<li><a href="/page/view/slug/about-gignal">About Gignal</a></li>
+	<li><a href="/page/view/slug/our-team">Our team</a></li>
+	<li><a href="http://blog.gignal.com/">Blog</a></li>
+	<li><a href="/page/view/slug/legal">Legal</a></li>
+</ul>
+</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<input type="hidden" name="baseUrl" id="baseUrl" value="" />
+<input type="hidden" name="originalController" id="originalController" value="page" />
+<input type="hidden" name="msg" value="" />
+<input type="hidden" name="domain" id="domain" value="gignal.com" />
+<input type="hidden" name="group" id="group" value="" />
+
+</body>
+
+</html>
+

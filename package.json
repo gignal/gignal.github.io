@@ -1,0 +1,13 @@
+{
+  "name": "gignal-lp",
+  "version": "0.0.0",
+  "description": "Gignal landingpage",
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

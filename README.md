@@ -1,4 +1,1 @@
-gignal-lp
-=========
-
-Gignal landingpage
+# Gignal landingpage
