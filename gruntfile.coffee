@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     uglify:
       components:
         options:
-          # mangle: false
+          mangle: false
           compress: true
         files:
           'lib/components.min.js': [
@@ -19,6 +19,7 @@ module.exports = (grunt) ->
             'common/scripts/jquery.validate.js'
             'scripts/jquery.colorbox.js'
             'scripts/main.js'
+            'scripts/hp.js'
           ]
 
     # less:

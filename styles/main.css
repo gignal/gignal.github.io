@@ -200,12 +200,12 @@ none
  */
 @font-face {
 	font-family: 'OpenSansCondensedLight';
-	src: url('../_fonts/OpenSans-CondLight-webfont.eot');
-	src: url('../_fonts/OpenSans-CondLight-webfont.eot?#iefix')
+	src: url('../fonts/OpenSans-CondLight-webfont.eot');
+	src: url('../fonts/OpenSans-CondLight-webfont.eot?#iefix')
 		format('embedded-opentype'),
-		url('../_fonts/OpenSans-CondLight-webfont.woff') format('woff'),
-		url('../_fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
-		url('../_fonts/OpenSans-CondLight-webfont.svg#OpenSansCondensedLight')
+		url('../fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+		url('../fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
+		url('../fonts/OpenSans-CondLight-webfont.svg#OpenSansCondensedLight')
 		format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -213,12 +213,12 @@ none
 
 @font-face {
 	font-family: 'OpenSansCondensedBold';
-	src: url('../_fonts/OpenSans-CondBold-webfont.eot');
-	src: url('../_fonts/OpenSans-CondBold-webfont.eot?#iefix')
+	src: url('../fonts/OpenSans-CondBold-webfont.eot');
+	src: url('../fonts/OpenSans-CondBold-webfont.eot?#iefix')
 		format('embedded-opentype'),
-		url('../_fonts/OpenSans-CondBold-webfont.woff') format('woff'),
-		url('../_fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
-		url('../_fonts/OpenSans-CondBold-webfont.svg#OpenSansCondensedBold')
+		url('../fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+		url('../fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+		url('../fonts/OpenSans-CondBold-webfont.svg#OpenSansCondensedBold')
 		format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -226,12 +226,12 @@ none
 
 @font-face {
 	font-family: 'OpenSansRegular';
-	src: url('../_fonts/OpenSans-Regular-webfont.eot');
-	src: url('../_fonts/OpenSans-Regular-webfont.eot?#iefix')
+	src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix')
 		format('embedded-opentype'),
-		url('../_fonts/OpenSans-Regular-webfont.woff') format('woff'),
-		url('../_fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-		url('../_fonts/OpenSans-Regular-webfont.svg#OpenSansRegular')
+		url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+		url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+		url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular')
 		format('svg');
 	font-weight: normal;
 	font-style: normal;
