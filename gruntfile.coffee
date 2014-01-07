@@ -2,15 +2,24 @@ module.exports = (grunt) ->
 
   grunt.initConfig
 
-    # uglify:
-    #   components:
-    #     options:
-    #       mangle: false
-    #       compress: true
-    #     files:
-    #       'parse/public/lib/components.min.js': [
-    #           'bower_components/bootstrap/dist/js/bootstrap.min.js'
-    #       ]
+    uglify:
+      components:
+        options:
+          # mangle: false
+          compress: true
+        files:
+          'lib/components.min.js': [
+            # 'bower_components/bootstrap/dist/js/bootstrap.min.js'
+            'common/scripts/jquery-1.7.2.js'
+            'common/scripts/jquery.pngFix.js'
+            'common/scripts/jquery-ui.js'
+            'common/scripts/jquery.lightbox.js'
+            'common/scripts/jquery.simplemodal.js'
+            'scripts/jquery.example.min.js'
+            'common/scripts/jquery.validate.js'
+            'scripts/jquery.colorbox.js'
+            'scripts/main.js'
+          ]
 
     # less:
     #   bootstrap:
@@ -26,18 +35,13 @@ module.exports = (grunt) ->
           keepSpecialComments: 0
         files:
           'lib/the.css': [
+            'common/styles/jquery-ui.css'
+            'common/styles/jquery.lightbox.css'
+            'styles/colorbox.css'
+            'styles/main.css'
           ]
 
-    watch:
-      scripts:
-        files: ['scripts/*.coffee']
-        tasks: ['coffee']
-      jst:
-        files: ['scripts/*.html']
-        tasks: ['jst']
-
-  grunt.registerTask 'default', ['uglify', 'cssmin']
+  grunt.registerTask 'default', ['cssmin', 'uglify']
 
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
-  grunt.loadNpmTasks 'grunt-contrib-watch'

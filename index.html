@@ -4,32 +4,20 @@
   <meta charset="utf-8" />
   <title>Welcome to Gignal</title>
   <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <script type="text/javascript" src="/common/scripts/jquery-1.7.2.js"></script>
-  <script type="text/javascript" src="/common/scripts/jquery.pngFix.js"></script>
-  <script type="text/javascript" src="/common/scripts/jquery-ui.js"></script>
-  <script type="text/javascript" src="/common/scripts/jquery.lightbox.js"></script>
-  <script type="text/javascript" src="/common/scripts/jquery.simplemodal.js"></script>
-  <script type="text/javascript" src="/scripts/jquery.example.min.js"></script>
-  <script type="text/javascript" src="/common/scripts/jquery.validate.js"></script>
-  <script type="text/javascript" src="/scripts/jquery.colorbox.js"></script>
-  <script type="text/javascript" src="/scripts/main.js"></script>
-  <link href="/common/styles/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/common/styles/jquery.lightbox.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/styles/colorbox.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/styles/main.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="lib/components.min.js" async></script>
+  <link href="lib/the.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body id="index">
 
 <div class="topbar">
 <div class="container_12 group">
-<div class="toplogo grid_4"><a href="/"><img src="/images/logo.png" alt="Gignal"></a></div>
+<div class="toplogo grid_4"><a href="/"><img src="./images/logo.png" alt="Gignal"></a></div>
 <div class="grid_7 push_1">
 <ul>
-  <li class="grid_1"><a href="/page/view/slug/about-gignal">About <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+  <li class="grid_1"><a href="/page/view/slug/about-gignal">About <span> <img src="./images/arr_down.png" alt="arrow"> </span> </a>
   <ul class="subnav">
     <li><a href="/page/view/slug/about-gignal">About Gignal</a></li>
     <li><a href="/page/view/slug/our-team">Our team</a></li>
@@ -40,7 +28,7 @@
 
 
     <li class="grid_2 push_2 logged" id="formSubnav">
-    <a href="#">Sign In <span> <img src="/images/arr_down.png" alt="arrow"> </span> </a>
+    <a href="#">Sign In <span> <img src="./images/arr_down.png" alt="arrow"> </span> </a>
     
     <form method="post" action="/auth/login" id="loginForm">
       <ul class="subnav loginnav contain_float">
@@ -49,7 +37,7 @@
         <li class="align_right">
           <input type="submit" value="Sign In" class="btn_form"> 
           <label><a class="forgot-pwd" href="#">Forgot your password ?</a></label> 
-          <label>Don't have an account yet ? <a class="sign-up" href="/user/create"><img src="/images/sign-up-for-gignal.png" /></a></label>
+          <label>Don't have an account yet ? <a class="sign-up" href="/user/create"><img src="./images/sign-up-for-gignal.png" /></a></label>
         </li>
       </ul>
     </form>
@@ -72,20 +60,20 @@
     <div class="hidecurtain"></div>
     <div class="header">
         <div class="grid_6 headerLeft">
-            <div class="identity"><img src="/images/logo-big.png" alt="Gignal"> <span class="tagline">Your social stream</span></div>
+            <div class="identity"><img src="./images/logo-big.png" alt="Gignal"> <span class="tagline">Your social stream</span></div>
             <p>Gignal amplifies the voice of your audience, by taking physical events online, and presenting what your customers are sharing about and around your brand. </p>
             <p class="orange">Scroll down and let us show you.</p>
             <div class="create_event_hp">
-                <a class="" href="/user/create"><img src="/images/btn_signup_big.png" alt="Sign up now"></a><br>
-                <a href="/event/create"><img src="/images/btn_createstream_blue.png" alt="create stream"></a>
+                <a class="" href="/user/create"><img src="./images/btn_signup_big.png" alt="Sign up now"></a><br>
+                <a href="/event/create"><img src="./images/btn_createstream_blue.png" alt="create stream"></a>
             </div>
         </div>
-        <div class="grid_6"><img src="/images/illustration01.gif" alt="" class="head_illustration">
-            <div class="laptop"><img src="/images/main_lap.png" alt="Labtop" class="curtain-cover"> <img src="/images/curtain.png" alt="Website" class="curtain-img"></div>
+        <div class="grid_6"><img src="./images/illustration01.gif" alt="" class="head_illustration">
+            <div class="laptop"><img src="./images/main_lap.png" alt="Labtop" class="curtain-cover"> <img src="./images/curtain.png" alt="Website" class="curtain-img"></div>
         </div>
     </div>
     <div class="content contain_float">
-        <div class="grid_7 td"><img src="/images/bilboards.png" alt="bilboards" class="curtain-cover"> <img src="/images/stream.png" alt="Stream" class="stream-img"></div>
+        <div class="grid_7 td"><img src="./images/bilboards.png" alt="bilboards" class="curtain-cover"> <img src="./images/stream.png" alt="Stream" class="stream-img"></div>
         <div class="grid_5">
         
             <div class="steamtype">
@@ -132,16 +120,16 @@
 <div class="footertop">
     <div class="container_12">
         <div>
-            <img src="/images/brand_starteur.png" alt="Start europe">
-            <img src="/images/brand_tedX.png" alt="TEDx">
-            <img src="/images/brand_tv2.png" alt="TV2">
-            <img src="/images/brand_rf.png" alt="Rosklide">
-            <img src="/images/brand_sommerBio.png" alt="Sommer Bio">
+            <img src="./images/brand_starteur.png" alt="Start europe">
+            <img src="./images/brand_tedX.png" alt="TEDx">
+            <img src="./images/brand_tv2.png" alt="TV2">
+            <img src="./images/brand_rf.png" alt="Rosklide">
+            <img src="./images/brand_sommerBio.png" alt="Sommer Bio">
         </div>
     </div>
 </div>
 
-<script type="text/javascript" src="/scripts/hp.js"></script>
+<script src="./scripts/hp.js"></script>
 
 <div class="footerbottom">
 <div class="container_12">
