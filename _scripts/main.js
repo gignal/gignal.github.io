@@ -1,11 +1,10 @@
-// JavaScript Document
 $( function( )
 {
-	validateLoginForm();
-	validateResetPassForm();
-	validateSignupForm();
+	// validateLoginForm();
+	// validateResetPassForm();
+	// validateSignupForm();
 
-	setTimeout( '$("#user_msg").fadeOut();' , 9000 );
+	// setTimeout( '$("#user_msg").fadeOut();' , 9000 );
 
 	$( '.topbar li' ).hover( function( )
 	{
@@ -42,30 +41,32 @@ $( function( )
 	// return false;
 	// });
 
-	$( ".forgot-pwd" ).click( function( )
-	{
-		$( "#signupForm" ).hide();
-		$( "#loginForm" ).hide();
-		$( "#resetPassForm" ).show();
-		return false;
-	} );
+	// $( ".forgot-pwd" ).click( function( )
+	// {
+	// 	$( "#signupForm" ).hide();
+	// 	$( "#loginForm" ).hide();
+	// 	$( "#resetPassForm" ).show();
+	// 	return false;
+	// } );
 
-	$( ".back-login" ).click( function( )
-	{
-		$( "#resetPassForm" ).hide();
-		$( "#signupForm" ).hide();
-		$( "#loginForm" ).show();
-		return false;
-	} );
+	// $( ".back-login" ).click( function( )
+	// {
+	// 	$( "#resetPassForm" ).hide();
+	// 	$( "#signupForm" ).hide();
+	// 	$( "#loginForm" ).show();
+	// 	return false;
+	// } );
 
-	$( '.feedback' ).example( function( )
-	{
-		return $( this ).attr( 'title' );
-	} );
+	// $( '.feedback' ).example( function( )
+	// {
+	// 	return $( this ).attr( 'title' );
+	// } );
 
-	$( '#feedback_btn' ).one( "click" , sendFeedback );
+	// $( '#feedback_btn' ).one( "click" , sendFeedback );
+
 } );
 
+/*
 function sendFeedback( )
 {
 	var feedback = $( "#feedback_txt" ).val();
@@ -210,3 +211,4 @@ function validateResetPassForm( )
 		}
 	} );
 }
+*/

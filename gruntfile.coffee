@@ -8,27 +8,18 @@ module.exports = (grunt) ->
           mangle: false
           compress: true
         files:
-          'lib/components.min.js': [
-            # 'bower_components/bootstrap/dist/js/bootstrap.min.js'
-            'common/scripts/jquery-1.7.2.js'
-            'common/scripts/jquery.pngFix.js'
-            'common/scripts/jquery-ui.js'
-            'common/scripts/jquery.lightbox.js'
-            'common/scripts/jquery.simplemodal.js'
-            'scripts/jquery.example.min.js'
-            'common/scripts/jquery.validate.js'
-            'scripts/jquery.colorbox.js'
-            'scripts/main.js'
-            'scripts/hp.js'
+          'lib/the.js': [
+            '_scripts/jquery-1.7.2.js'
+            # '_scripts/jquery.pngFix.js'
+            '_scripts/jquery-ui.js'
+            # '_scripts/jquery.lightbox.js'
+            # '_scripts/jquery.simplemodal.js'
+            # '_scripts/jquery.example.min.js'
+            # '_scripts/jquery.validate.js'
+            # '_scripts/jquery.colorbox.js'
+            '_scripts/main.js'
+            '_scripts/hp.js'
           ]
-
-    # less:
-    #   bootstrap:
-    #     options:
-    #       compress: true
-    #       paths: ['bower_components/bootstrap/less']
-    #     files:
-    #       'parse/public/lib/bootstrap.min.css': ['bower_components/bootstrap/less/bootstrap.less']
 
     cssmin:
       combine:
@@ -36,13 +27,26 @@ module.exports = (grunt) ->
           keepSpecialComments: 0
         files:
           'lib/the.css': [
-            'common/styles/jquery-ui.css'
-            'common/styles/jquery.lightbox.css'
-            'styles/colorbox.css'
-            'styles/main.css'
+            '_styles/jquery-ui.css'
+            # '_styles/jquery.lightbox.css'
+            # '_styles/colorbox.css'
+            '_styles/main.css'
           ]
 
-  grunt.registerTask 'default', ['cssmin', 'uglify']
+    assemble:
+      options:
+        flatten: true
+        layoutdir: '_templates'
+      pages:
+        options:
+          layout: 'default.hbs'
+        files:
+          '.': [
+            '_pages/*.hbs'
+          ]
+
+  grunt.registerTask 'default', ['assemble', 'cssmin', 'uglify']
 
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
+  grunt.loadNpmTasks 'assemble'

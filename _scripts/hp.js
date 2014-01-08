@@ -1,22 +1,17 @@
-$(function()
-{
+function hp () {
 	$(".curtain-img").fadeIn(1000);
 
 	var lastScrollTop = 0, delta = 12;
-	$(window).scroll(function()
-	{
+
+	$(window).scroll(function(){
+
 		var st = $(this).scrollTop();
-		if (st > lastScrollTop)
-		{
-			$('.stream-img').stop(true).animate(
-			{
+		if (st > lastScrollTop) {
+			$('.stream-img').stop(true).animate({
 				top : "+=" + delta
 			}, 400);
-		}
-		else
-		{
-			$('.stream-img').stop(true).animate(
-			{
+		} else {
+			$('.stream-img').stop(true).animate({
 				top : "-=" + delta
 			}, 400);
 		}
@@ -27,20 +22,26 @@ $(function()
 	alignCurtain(".stream-img", ".td", 163.5);
 	alignCurtain(".curtain-img", ".laptop", 140.5);
 
-	$(window).resize(function()
-	{
+	$(window).resize(function(){
 		alignCurtain(".stream-img", ".td", 163.5);
 		alignCurtain(".curtain-img", ".laptop", 140.5);
 	});
-});
 
-function alignCurtain(elem, container, num)
-{
+}
+
+function alignCurtain (elem, container, num) {
 	var containerOffset, newOffset;
 	containerOffset = $(container).offset().left;
 	newOffset = containerOffset + num;
-	$(elem).offset(
-	{
-		left : newOffset
+	$(elem).offset({
+		left: newOffset
 	});
 }
+
+
+$(function(){
+	// home?
+  if ($('#index').length !== 0) {
+  	hp();
+  }
+});
