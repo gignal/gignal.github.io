@@ -13,29 +13,39 @@
 </head>
 <body id="{{pageid}}">
 
-  <div class="hidecurtain">
+  <header class="hidecurtain">
     <div class="container_12">
       <div class="identity">
         <a href="./"><img src="./images/g-72.png" alt="Gignal" class="logo"></a>
       </div>  
     </div>
-  </div>
+  </header>
 
-  {{> body }}
+  <article>
+    {{> body }}
+  </article>
 
-  <div class="footerbottom">
+  <footer class="footerbottom">
     <div class="container_12">
 
-      <div class="grid_6">
+      <div class="grid_5">
+        <nav>
+          <ul class="subnav">
+            <li><a href="./about.html">About Gignal</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./team.html">Our team</a></li>
+            <li><a href="./legal.html">Legal</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="grid_2 align_center">
         <ul class="subnav">
-          <li><a href="./about.html">About Gignal</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./team.html">Our team</a></li>
-          <li><a href="./legal.html">Legal</a></li>
+          <li><a href="https://gignal.parseapp.com/" rel="me">Login</a></li>
         </ul>
       </div>
 
-      <div class="grid_6 align_right">
+      <div class="grid_5 align_right">
         <ul class="subnav">
           <li><a href="https://twitter.com/gignal" rel="me">Twitter</a></li>
           <li><a href="https://www.facebook.com/gignal" rel="me">Facebook</a></li>
