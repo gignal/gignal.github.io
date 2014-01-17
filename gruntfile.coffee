@@ -9,9 +9,10 @@ module.exports = (grunt) ->
           compress: true
           wrap: true
         files:
-          'lib/the.js': [
-            '_scripts/main.js'
-            '_scripts/hp.js'
+          'lib/index.js': [
+            'bower_components/zeptojs/src/zepto.js'
+            'bower_components/zeptojs/src/event.js'
+            '_scripts/index.js'
           ]
 
     cssmin:
