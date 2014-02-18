@@ -15,12 +15,21 @@ module.exports = (grunt) ->
             '_scripts/index.js'
           ]
 
+    less:
+      bootstrap:
+        options:
+          paths: 'bower_components/bootstrap/less'
+        files: '_styles/bootstrap.css': '_styles/bootstrap.less'
+      main:
+        files: '_styles/main.css': '_styles/main.less'
+
     cssmin:
       combine:
         options:
           keepSpecialComments: 0
         files:
           'lib/the.css': [
+            '_styles/bootstrap.css'
             '_styles/main.css'
           ]
 
@@ -32,12 +41,13 @@ module.exports = (grunt) ->
         options:
           layout: 'default.hbs'
         files:
-          '.': [
-            '_pages/*.hbs'
-          ]
+          '.': '_pages/*.hbs'
 
-  grunt.registerTask 'default', ['assemble', 'cssmin', 'uglify']
+  # grunt.registerTask 'default', ['assemble', 'less', 'cssmin', 'uglify']
+  grunt.registerTask 'default', ['assemble', 'less', 'cssmin']
+  grunt.registerTask 'style', ['less', 'cssmin']
 
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
+  grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'assemble'
