@@ -1,6 +1,6 @@
 {
   "name": "gignal-lp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/webjay/gignal-lp",
   "authors": [
     "Jacob Friis Saxberg <jacob@saxberg.dk>"
@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "zeptojs": "1.1.x",
-    "bootstrap": "3.1.x"
+    "bootstrap": "3.2.x"
   }
 }
