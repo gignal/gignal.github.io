@@ -1,20 +1,7 @@
 module.exports = (grunt) ->
 
   grunt.initConfig
-
-    uglify:
-      components:
-        options:
-          # mangle: false
-          compress: true
-          wrap: true
-        files:
-          'lib/index.js': [
-            'bower_components/zeptojs/src/zepto.js'
-            'bower_components/zeptojs/src/event.js'
-            '_scripts/index.js'
-          ]
-
+  
     less:
       bootstrap:
         options:
@@ -34,14 +21,12 @@ module.exports = (grunt) ->
           ]
 
     assemble:
-      options:
-        flatten: true
-        layoutdir: '_templates'
       pages:
         options:
-          layout: 'default.hbs'
+          flatten: true
+          layout: '_templates/default.hbs'
         files:
-          '.': '_pages/*.hbs'
+          '.': ['_pages/*.hbs']
 
     imagemin:
       dynamic:
@@ -57,7 +42,6 @@ module.exports = (grunt) ->
   grunt.registerTask 'default', ['assemble', 'less', 'cssmin', 'imagemin']
   grunt.registerTask 'style', ['less', 'cssmin']
 
-  grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-contrib-imagemin'

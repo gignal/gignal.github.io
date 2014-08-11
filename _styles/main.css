@@ -44,6 +44,11 @@ body {
   top: 70px;
   left: 71px;
 }
+@media (min-width: 1200px) {
+  #index-top #screen #screenbg {
+    left: 171px;
+  }
+}
 #index-top #screen #screenbg img {
   width: 250px;
   position: absolute;
