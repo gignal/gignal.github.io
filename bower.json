@@ -1,11 +1,10 @@
 {
   "name": "gignal-lp",
   "version": "0.0.3",
-  "homepage": "https://github.com/webjay/gignal-lp",
   "authors": [
-    "Jacob Friis Saxberg <jacob@saxberg.dk>"
+    "Jacob Friis Saxberg <jacob@webcom.dk>"
   ],
-  "description": "Gignal Landingpage",
+  "description": "Gignal landingpage",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,6 +15,9 @@
   ],
   "dependencies": {
     "zeptojs": "1.1.x",
-    "bootstrap": "3.2.x"
+    "bootstrap": "~3.3.2"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.2"
   }
 }
