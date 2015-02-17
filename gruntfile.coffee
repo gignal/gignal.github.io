@@ -6,18 +6,18 @@ module.exports = (grunt) ->
       bootstrap:
         options:
           paths: 'bower_components/bootstrap/less'
-        files: '_styles/bootstrap.css': '_styles/bootstrap.less'
+        files: '.tmp/bootstrap.css': '_styles/bootstrap.less'
       main:
-        files: '_styles/main.css': '_styles/main.less'
+        files: '.tmp/main.css': '_styles/main.less'
 
     cssmin:
       combine:
         options:
           keepSpecialComments: 0
         files:
-          'lib/the.css': [
-            '_styles/bootstrap.css'
-            '_styles/main.css'
+          'dist/lib/the.css': [
+            '.tmp/bootstrap.css'
+            '.tmp/main.css'
           ]
 
     assemble:
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
           flatten: true
           layout: '_templates/default.hbs'
         files:
-          '.': ['_pages/*.hbs']
+          'dist/.': ['_pages/*.hbs']
 
     imagemin:
       dynamic:
@@ -36,13 +36,28 @@ module.exports = (grunt) ->
           expand: true
           cwd: '_images/'
           src: ['**/*.{png,jpg,gif}']
-          dest: 'img/'
+          dest: 'dist/img/'
         ]
-        
-  grunt.registerTask 'default', ['assemble', 'less', 'cssmin', 'imagemin']
+
+    copy:
+      bootstrap:
+        cwd: 'bower_components/bootstrap/dist/fonts/'
+        src: '*'
+        dest: 'dist/fonts/'
+        expand: true
+        filter: 'isFile'
+      files:
+        cwd: 'files/'
+        src: '*'
+        dest: 'dist/'
+        expand: true
+        # filter: 'isFile'
+
+  grunt.registerTask 'default', ['assemble', 'less', 'cssmin', 'imagemin', 'copy']
   grunt.registerTask 'style', ['less', 'cssmin']
 
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-contrib-imagemin'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'assemble'
