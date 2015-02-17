@@ -26,7 +26,7 @@ module.exports = (grunt) ->
           flatten: true
           layout: '_templates/default.hbs'
         files:
-          'dist/.': ['_pages/*.hbs']
+          'dist/': ['_pages/*.hbs']
 
     imagemin:
       dynamic:
