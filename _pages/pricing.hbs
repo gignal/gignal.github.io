@@ -1,9 +1,36 @@
 ---
 title: Pricing
 description: Gignal pricing
+prices:
+  - level: Free
+    price: free
+    streams: 1
+    tags: 1
+    timeframe: 1 day
+    moderation: '-'
+    backup: '-'
+  - level: Event
+    price: $399
+    streams: 1
+    tags: 1
+    timeframe: 2 days
+    moderation: '-'
+    backup: '-'
+  - level: Brand
+    price: $499
+    streams: 2
+    tags: 2
+    timeframe: 1 month
+    moderation: '-'
+    backup: Yes
+  - level: Enterprise
+    price: sales@gignal.com
+    streams: ∞
+    tags: ∞
+    timeframe: ∞
+    moderation: Yes
+    backup: Yes
 ---
-
-<!-- <div class="banner" id="banner-pricing"></div> -->
 
 <div class="container">
 
@@ -14,59 +41,52 @@ description: Gignal pricing
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th>Free</th>
-          <th>Event</th>
-          <th>Brand</th>
-          <th>Enterprise</th>
+          {{~#each prices}}
+          <th>{{ this.level }}</th>
+          {{~/each}}
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>Price</th>
-          <td>0</td>
-          <td>$399</td>
-          <td>$499</td>
-          <td><a href="mailto:sales@gignal.com">sales@gignal.com</a></td>
+          {{~#each prices}}
+          <td>{{ this.price }}</td>
+          {{~/each}}
         </tr>
         <tr>
           <th>Streams</th>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
-          <td><strong>&infin;</strong></td>
+          {{~#each prices}}
+          <td>{{ this.streams }}</td>
+          {{~/each}}
         </tr>
         <tr>
           <th>Tags</th>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
-          <td><strong>&infin;</strong></td>
+          {{~#each prices}}
+          <td>{{ this.tags }}</td>
+          {{~/each}}
         </tr>
         <tr>
           <th>Timeframe</th>
-          <td>1 day</td>
-          <td>2 days</td>
-          <td>1 month</td>
-          <td><strong>&infin;</strong></td>
+          {{~#each prices}}
+          <td>{{ this.timeframe }}</td>
+          {{~/each}}
         </tr>
         <tr>
           <th>Moderation</th>
-          <td><span class="glyphicon glyphicon-minus"></span></td>
-          <td><span class="glyphicon glyphicon-minus"></span></td>
-          <td><span class="glyphicon glyphicon-ok"></span></td>
-          <td><span class="glyphicon glyphicon-ok"></span></td>
+          {{~#each prices}}
+          <td>{{ this.moderation }}</td>
+          {{~/each}}
         </tr>
         <tr>
           <th>Backup</th>
-          <td><span class="glyphicon glyphicon-minus"></span></td>
-          <td><span class="glyphicon glyphicon-minus"></span></td>
-          <td><span class="glyphicon glyphicon-ok"></span></td>
-          <td><span class="glyphicon glyphicon-ok"></span></td>
+          {{~#each prices}}
+          <td>{{ this.backup }}</td>
+          {{~/each}}
         </tr>
       </tbody>
     </table>
   </div>
-  
+
   <p class="text-center">
     <a href="https://gignal.parseapp.com/" class="btn btn-success btn-lg">Get started</a>
   </p>
