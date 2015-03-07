@@ -43,7 +43,7 @@ module.exports = (grunt) ->
       bootstrap:
         cwd: 'bower_components/bootstrap/dist/fonts/'
         src: '*'
-        dest: 'dist/lib/fonts/'
+        dest: 'dist/fonts/'
         expand: true
         filter: 'isFile'
       files:
